@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mad Dawgz · In-Season Tournament</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Kampe, stilling og slutspil i Mad Dawgz' In-Season Tournament">
+<meta property="og:title" content="Mad Dawgz · In-Season Tournament">
+<meta property="og:description" content="Kampe, stilling og slutspil med stats fra ESPN, opdateret løbende mens der spilles">
+<meta name="theme-color" content="#0f1623">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23f26b1d'/%3E%3Cpath d='M1 16h30M16 1v30M5 5c6 6 6 16 0 22M27 5c-6 6-6 16 0 22' stroke='%230f1623' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Skrifttypen hentes uden at blokere siden: svarer Google ikke, bruges telefonens egen skrift -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css?v=1795614367">
+</head>
+<body>
+<header class="top">
+  <div class="top-in wrap">
+    <a class="brand" href="#/">
+      <span class="brand-mark">MD</span>
+      <span class="brand-text"><b id="league-name">Mad Dawgz</b><small id="league-sub">In-Season Tournament</small></span>
+    </a>
+    <span class="top-right">
+      <span class="updated" id="updated"></span>
+      <select id="season" class="season" aria-label="Vælg sæson" hidden></select>
+    </span>
+  </div>
+  <nav class="tabs wrap" id="tabs" aria-label="Sider">
+    <a href="#/kampe" data-tab="kampe">Kampe</a>
+    <a href="#/stilling" data-tab="stilling">Stilling</a>
+    <a href="#/program" data-tab="program">Program</a>
+    <a href="#/slutspil" data-tab="slutspil">Slutspil</a>
+    <a href="#/hold" data-tab="hold">Hold</a>
+    <a href="#/statistik" data-tab="statistik">Statistik</a>
+    <a href="#/regler" data-tab="regler">Regler</a>
+  </nav>
+</header>
+<div class="wrap"><div id="notice" class="notice" hidden></div></div>
+<main id="app" class="wrap"><p class="empty">Henter data…</p></main>
+<footer class="foot wrap"><span id="updated-foot"></span> Stats fra ESPN Fantasy, dag for dag, kun spillere på aktive pladser.</footer>
+<script src="app.js?v=1795614367" defer></script>
+</body>
+</html>
